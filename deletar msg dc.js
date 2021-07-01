@@ -1,5 +1,5 @@
 // Cole este código dentro do console em discord.com(navegador)
-// Codado por É GG#1203 (714143339368415294)
+// Codado por É GG#7413 (714143339368415294)
 // Github: https://github.com/EGG1203
 
 (function () {
@@ -8,7 +8,7 @@
     popup = window.open('', '', `top=0,left=${screen.width-800},width=850,height=${screen.height}`);
     if(!popup || !popup.document || !popup.document.write) return console.error('Pop-up bloqueado! Por favor, permita pop-ups e tente novamente.');
     popup.document.write(/*html*/`<!DOCTYPE html>
-    <html><head><meta charset='utf-8'><title>Apagar Mensagens do Discord por É GG#1203</title><base target="_blank">
+    <html><head><meta charset='utf-8'><title>Apagar Mensagens do Discord por É GG#7413</title><base target="_blank">
     <style>body{background-color:#36393f;color:#dcddde;font-family:sans-serif;font-size: 9pt;} a{color:#00b0f4;}
     body.redact .priv{display:none;} body:not(.redact) .mask{display:none;} body.redact [priv]{-webkit-text-security:disc;}
     .toolbar span{margin-right:8px;}
@@ -53,7 +53,7 @@
     </div>
     <pre style="margin-top:250px;text-decoration:none;font-size:0.75rem;font-family:Consolas,Liberation Mono,Menlo,Courier,monospace;">
        \n\n
-            <a href="https://discord.gg/sgZAMyM3st" target="_blank">Problemas ou ajuda falar com É GG#1203</a></center>
+            <a href="https://discord.gg/sgZAMyM3st" target="_blank">Problemas ou ajuda falar com É GG#7413</a></center>
         </pre></body></html>`);
 
     const $ = s => popup.document.querySelector(s);
@@ -309,7 +309,7 @@
                             throttledCount++;
                             throttledTotalTime += w;
                             deleteDelay = w; // aumentar o atraso
-                            log.warn(`Sendo a taxa limitada pela API para ${w}ms! Atraso de exclusão ajustado para ${deleteDelay}ms.`);
+                            log.warn(`Taxa sendo limitada pela API para ${w}ms! Atraso de exclusão ajustado para ${deleteDelay}ms.`);
                             printDelayStats();
                             log.verb(`Respirando por ${w*2}ms antes de tentar novamente...`);
                             await wait(w*2);
