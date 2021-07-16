@@ -166,7 +166,7 @@
         const wait = async ms => new Promise(done => setTimeout(done, ms));
         const msToHMS = s => `${s / 3.6e6 | 0}h ${(s % 3.6e6) / 6e4 | 0}m ${(s % 6e4) / 1000 | 0}s`;
         const escapeHTML = html => html.replace(/[&<"']/g, m => ({ '&': '&amp;', '<': '&lt;', '"': '&quot;', '\'': '&#039;' })[m]);
-        const redact = str => `<span class="priv">${escapeHTML(str)}</span><span class="mask">REDACTED</span>`;
+        const redact = str => `<span class="priv">${escapeHTML(str)}</span><span class="mask">ESCONDIDO</span>`;
         const queryString = params => params.filter(p => p[1] !== undefined).map(p => p[0] + '=' + encodeURIComponent(p[1])).join('&');
         const ask = async msg => new Promise(resolve => setTimeout(() => resolve(popup.confirm(msg)), 10));
         const printDelayStats = () => log.verb(`Atraso de exclusão: ${deleteDelay}ms, Atraso de procura: ${searchDelay}ms`, `Último Ping: ${lastPing}ms, Ping médio: ${avgPing|0}ms`);
